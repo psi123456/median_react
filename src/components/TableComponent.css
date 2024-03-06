@@ -1,0 +1,78 @@
+/* 밝은 노란색 카드 헤더 스타일 */
+.card-header-yellow {
+    background-color: #f7e600;
+    color: black;
+}
+
+/* 말풍선 스타일 */
+.speech-bubble {
+    position: relative;
+    background: #ffffcc;
+    border-radius: .4em;
+    padding: 20px;
+    color: black;
+    font-size: 2em;
+    display: inline-block;
+    margin-bottom: 1em;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    animation: popIn 0.5s ease-out;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: #ffffcc;
+    border-left: 0;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+/* 의약품 사용기한 정보 박스 스타일 */
+.medicine-expiry-info {
+    background-color: #ffffcc;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.medicine-expiry-info p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* 개나리색 버튼 스타일 */
+.btn-yellow {
+    background-color: #f7e600;
+    color: black;
+    border-color: #f7e600;
+}
+
+.btn-yellow:hover {
+    background-color: #e6d500;
+    border-color: #e6d500;
+}
+
+/* 전체 높이 및 너비를 차지하는 스타일 */
+.vh-100 {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.w-100 {
+    max-width: none;
+}
+
+/* 테이블 스타일 */
+.table {
+    margin-bottom: 0;
+}

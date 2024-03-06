@@ -1,3 +1,4 @@
+/* App.css - General Styling and Animations */
 .App {
   text-align: center;
 }
@@ -35,4 +36,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Main Content Styling */
+main {
+  margin-top: 50px; 
+  overflow-y: auto; 
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navigation Transitions */
+.nav-transition-enter {
+  transform: translateX(-100%);
+}
+.nav-transition-enter-active {
+  transform: translateX(0);
+  transition: transform 350ms;
+}
+.nav-transition-exit {
+  transform: translateX(0%);
+}
+.nav-transition-exit-active {
+  transform: translateX(-100%);
+  transition: transform 350ms;
+}
+
+/* 내비바 */
+.navbar {
+  background-color: #fff082; /* Light yellow color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 56px; /* Adjusted for the navbar height */
+  z-index: 1030;
+}
+
+/* 사이드바 */
+.side-nav {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 56px; /* Navbar의 높이에 맞춰서 조절합니다. */
+  left: 0;
+  background: #fff6b0;
+  padding: 40px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+/* Responsive Design Adjustments */
+@media (min-width: 992px) {
+  .custom-navbar {
+    width: auto; /* Auto width on larger screens */
+  }
+}
+
+/* 전체 화면 스타일 */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  position: relative;
+  z-index: 0; /* 기본값으로 설정 */
+}
+
+/* 코드 스타일 */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

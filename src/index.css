@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 전체 화면 스타일 */
+html, body, #root {
+  height: 100%; /* 화면 높이를 100%로 설정하여 화면 전체를 채우도록 합니다. */
+  margin: 0; /* body의 기본 마진을 제거하여 전체 화면을 채우도록 합니다. */
+  padding: 0; /* body의 기본 패딩을 제거하여 전체 화면을 채우도록 합니다. */
+  background-color: #ffffcc; /* 연한 노란색 배경색 */
+  display: flex; /* 내부 요소를 수직 중앙 정렬하기 위해 Flexbox 레이아웃을 사용합니다. */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
 }
 
+/* 코드 스타일 */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

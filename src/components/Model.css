@@ -1,0 +1,87 @@
+/* 예: styles.css */
+
+  .custom-card-color {
+    background-color: #ffd37a9f; /* 여기에 원하는 색상 코드 적용 */
+  }
+
+  .image-upload-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image-upload-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* 필요한 추가 스타일링 */
+  }
+
+
+  .custom-card-size {
+    width: 370px; /* 카드의 폭 설정 */
+    height: 500px; /* 카드의 높이를 500px로 고정 */
+    background-color: #ffd37a9f; /* 카드의 배경 색상 */
+    overflow: hidden; /* 카드 크기를 넘어서는 내용 숨김 처리 */
+  }
+  
+  .card-img-top {
+    width: 100%; /* 이미지의 폭을 카드의 폭에 맞춤 */
+    height: 500px; /* 이미지의 높이를 카드의 높이에 고정 */
+    object-fit: contain; /* 이미지 비율 유지, 카드 내에 전체 이미지를 맞춤 */
+  }
+  
+  .custom-card-size3 {
+    width: 370px; /* 카드의 폭 설정 */
+    height: 1500px; /* 카드의 높이를 500px로 조정 */
+    background-color: #ffd37a9f; /* 여기에 원하는 색상 코드 적용 */
+    overflow: hidden; /* 카드 내부 콘텐츠가 넘쳐흘러도 숨김 처리 */
+
+  }
+  
+  .card-img-top3 {
+    width: 100%; /* 이미지의 폭을 카드의 폭에 맞춤 */
+    height: 100%; /* 이미지의 높이를 카드의 높이에 맞춤 */
+    object-fit: cover; /* 이미지가 카드 내부에 전체적으로 맞추고 비율 유지 */
+  }
+  .custom-upload-button {
+    background-color: #4CAF50; /* 버튼 배경 색상 */
+    color: white; /* 텍스트 색상 */
+    padding: 10px 20px; /* 패딩 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 테두리 둥글게 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    font-size: 16px; /* 글자 크기 */
+    margin-top: 10px; /* 상단 여백 */
+  }
+  
+  .custom-upload-button:hover {
+    background-color: #45a049; /* 호버 시 버튼 색상 */
+  }
+  /* 이미지를 감싸는 컨테이너 스타일 */
+  .image-container {
+    background-color: hsl(38, 96%, 89%); /* 배경색 설정 */
+    padding: 0px; /* 주변 여백 */
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100%; /* 높이를 부모 요소와 동일하게 설정 */
+  }
+
+  /* 카드 제목 스타일 */
+.card-title {
+  font-weight: bold; /* 글씨 굵게 */
+  color: #333; /* 글씨 색상 */
+  font-size: 1.2em; /* 글씨 크기 */
+}
+
+/* 두 번째 카드의 클래스 정보 스타일 */
+.custom-class-text {
+  font-weight: bold; /* 글씨 굵게 */
+  color: #000000; /* 글씨 색상 */
+  font-size: 1.2em; /* 글씨 크기 */
+  background-color: #ff8f52; /* 배경 색상 */
+  padding: 5px; /* 패딩 */
+  border-radius: 5px; /* 테두리 둥글게 */
+  text-align: center; /* 중앙 정렬 */
+}

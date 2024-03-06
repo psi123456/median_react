@@ -1,0 +1,20 @@
+/* Main Content Styling */
+main {
+    margin-top: 56px; /* Adjusted for the navbar height */
+  }
+  
+  /* Navigation Transitions */
+  .nav-transition-enter {
+    transform: translateX(-100%);
+  }
+  .nav-transition-enter-active {
+    transform: translateX(0);
+    transition: transform 350ms;
+  }
+  .nav-transition-exit {
+    transform: translateX(0%);
+  }
+  .nav-transition-exit-active {
+    transform: translateX(-100%);
+    transition: transform 350ms;
+  }
